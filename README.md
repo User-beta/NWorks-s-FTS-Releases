@@ -5,7 +5,7 @@ computer, it rings, and once the other person answers you can send files
 and folders to each other directly. Nothing is uploaded to a cloud, and the
 connection is end-to-end encrypted.
 
-Available for **Windows**, **macOS** and **Linux**.
+Available for **Windows**, **macOS**, **Linux** and **iPhone**.
 
 ## Download
 
@@ -17,6 +17,7 @@ Get the latest version from
 | Windows | `NWFTS_x.y.z_x64-setup.exe`            |
 | macOS   | `NWFTS_x.y.z_universal.dmg`            |
 | Linux   | `NWFTS_x.y.z_amd64.AppImage` or `.deb` |
+| iPhone  | through AltStore, see below            |
 
 Once installed, NWFTS updates itself: when a new version is out, it asks
 before installing and never restarts during a call.
@@ -36,6 +37,38 @@ the first time.
 - **Linux:** for the AppImage, make it executable
   (`chmod +x NWFTS_*.AppImage`) and run it. For the `.deb`:
   `sudo apt install ./NWFTS_*_amd64.deb`.
+
+## iPhone
+
+NWFTS for iPhone is installed with **AltStore Classic** (AltServer on a
+computer, free Apple ID). AltStore PAL cannot install it, because PAL only
+takes apps notarised by Apple.
+
+1. Start AltServer on your computer. Put the phone on the same Wi-Fi, or
+   connect the cable.
+2. In AltStore, go to **Sources**, tap **+** and add:
+   ```
+   https://raw.githubusercontent.com/User-beta/NWorks-s-FTS-Releases/main/altstore.json
+   ```
+3. Open NWFTS in the source and install it.
+4. If iOS says "Untrusted Developer": **Settings > General > VPN & Device
+   Management**, tap your Apple ID, then **Trust**.
+5. When NWFTS asks for **Local Network** access, allow it, otherwise
+   computers on your Wi-Fi are not found.
+
+AltStore signs the app with your Apple ID, so refresh it at least every 7
+days (**My Apps > Refresh All**, with AltServer running). New versions show
+up in **My Apps** as **Update**.
+
+On iPhone:
+
+- NWFTS receives calls only while it is open on the screen; iOS pauses apps
+  in the background. During a call the screen stays on.
+- Received files are in the **Files** app under **On My iPhone > NWFTS**.
+- You can send files from Files and photos or videos from Photos.
+- To be called over the internet you usually need the relay (Settings >
+  Relay, both people). Calling a computer that is reachable works without
+  it.
 
 ## How it works
 
@@ -89,6 +122,8 @@ files are moved to a quarantine folder and the sender is told.
 - **Linux:** install ClamAV (`sudo apt install clamav`, then
   `sudo freshclam`).
 - Any other antivirus with a command-line scanner can be set in Settings.
+- **iPhone:** not available; iOS has no scanner apps can use. Files on an
+  iPhone cannot run as programs.
 
 No scanner catches everything, so be careful with programs from people you
 don't know.
