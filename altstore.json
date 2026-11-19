@@ -1,0 +1,40 @@
+{
+  "name": "NWFTS",
+  "identifier": "com.nworks.nwfts.source",
+  "subtitle": "NWorks's File Transfer System",
+  "description": "Send files and folders directly from one device to another, like a phone call. Nothing is uploaded to a cloud, and every connection is end-to-end encrypted. Works with NWFTS on Windows, macOS and Linux. On iPhone, keep NWFTS open to receive calls.",
+  "iconURL": "https://raw.githubusercontent.com/User-beta/NWorks-s-FTS-Releases/main/icon.png",
+  "website": "https://github.com/User-beta/NWorks-s-FTS-Releases",
+  "tintColor": "#4f46e5",
+  "apps": [
+    {
+      "name": "NWFTS",
+      "bundleIdentifier": "com.nworks.nwfts",
+      "developerName": "NWorks",
+      "subtitle": "Send files directly, like a phone call",
+      "localizedDescription": "Send files and folders directly from one device to another, like a phone call. Nothing is uploaded to a cloud, and every connection is end-to-end encrypted. Works with NWFTS on Windows, macOS and Linux. On iPhone, keep NWFTS open to receive calls.",
+      "iconURL": "https://raw.githubusercontent.com/User-beta/NWorks-s-FTS-Releases/main/icon.png",
+      "tintColor": "#4f46e5",
+      "category": "utilities",
+      "screenshots": [],
+      "versions": [
+        {
+          "version": "0.3.0",
+          "buildVersion": "0.3.0.2",
+          "date": "2026-11-19",
+          "localizedDescription": "• NWFTS for iPhone, installed with AltStore. It finds computers on the same Wi-Fi, calls and receives calls while it is open, and saves received files in the Files app.\n• Narrow windows and phones get a tab bar at the bottom.\n• Updated networking library; calls with 0.2.0 keep working.",
+          "downloadURL": "https://github.com/User-beta/NWorks-s-FTS-Releases/releases/download/v0.3.0/NWFTS_0.3.0_iOS.ipa",
+          "size": 7902727,
+          "minOSVersion": "16.0"
+        }
+      ],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {
+          "NSLocalNetworkUsageDescription": "NWFTS finds computers running NWFTS on your network and connects to them directly to send files."
+        }
+      }
+    }
+  ],
+  "news": []
+}
